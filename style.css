@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+.containerCalculator {
+  padding: 2rem 1rem;
+  max-width: 500px;
+  margin: auto;
+  width: 100%;
+}
+
+.containerDalam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: grey;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.containerDalam input {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  border: none;
+  margin-bottom: 1.5rem;
+  outline: none;
+}
+
+.containerInput {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+.containerInput button {
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 9rem;
+  background-color: #f1f1f1;
+  transition: 0.3s ease;
+  -webkit-border-radius: 9rem;
+  -moz-border-radius: 9rem;
+  -ms-border-radius: 9rem;
+  -o-border-radius: 9rem;
+}
+
+.containerInput button:hover {
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+.containerInput span button {
+  padding: 1rem;
+  width: 217%;
+}
+
+@media (max-width: 400px) {
+  .containerInput {
+    gap: 0.5rem;
+  }
+
+  .containerInput button {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .containerDalam input {
+    font-size: 1.2rem;
+  }
+}

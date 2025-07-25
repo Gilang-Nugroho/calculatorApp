@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+
+    <div class="containerCalculator">
+
+      <div class="containerDalam">
+        <input type="text" name="" id="display">
+
+      <div class="containerInput">
+          <button onclick="clearDisplay('C')">C</button>
+          <button onclick="deletePerNumber('DEL')">DEL</button>
+          <button class="operator" onclick="toDisplay('%')">%</button>
+          <button class="opreator" onclick="toDisplay('/')">/</button>
+
+          <button class="number" onclick="toDisplay('7')">7</button>
+          <button class="number" onclick="toDisplay('8')">8</button>
+          <button class="number" onclick="toDisplay('9')">9</button>
+          <button class="operator" onclick="toDisplay('X')">X</button>
+
+          <button class="number" onclick="toDisplay('4')">4</button>
+          <button class="number" onclick="toDisplay('5')">5</button>
+          <button class="number" onclick="toDisplay('6')">6</button>
+          <button class="operator" onclick="toDisplay('-')">-</button>
+
+          <button class="number" onclick="toDisplay('1')">1</button>
+          <button class="number" onclick="toDisplay('2')">2</button>
+          <button class="number" onclick="toDisplay('3')">3</button>
+          <button class="operator" onclick="toDisplay('+')">+</button>
+
+          <button onclick="toDisplay('.')">.</button>
+          <button class="number" onclick="toDisplay('0')">0</button>
+          <span><button onclick="resultButton()">=</button></span>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>
+
+  </body>
+</html>
